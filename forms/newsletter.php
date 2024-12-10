@@ -1,39 +1,53 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    //include the autoloader
+    require '../vendor/autoload.php';
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $email = htmlspecialchars($_POST['email']);
+    
+        // Validate email
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "Invalid email format";
+            exit;
+        }
+    
+        // PHPMailer setup
+        $mail = new PHPMailer(true);
+    
+        try {
+            // SMTP configuration
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP server
+            $mail->SMTPAuth = true;
+            $mail->Username = 'martin44line@gmail.com'; // Your email
+            $mail->Password = 'oyza lsni iyqz tgdm'; // Your email password or app password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
+    
+            // Email content
+            $mail->setFrom($email);
+            $mail->addAddress('martin44line@gmail.com'); // Recipient email
+            $mail->Subject = "NOUVEL UTILISATEUR QUI SOUHAITERAIT SOUSCRIRE A LA NEWS LETTER DU SFAN";
+            $mail->Body = "Vous avez reçu un nouveau mail de $email.\n\n" .
+                          "$email SOUHAITE SOUSCRIRE A LA NEWSLETTER DU SFAN:\n\n VOUS AVEZ LE DROIT DE LUI ENVOYEZ DES MESSAGES.\n\n";
+    
+            // Send email
+            if ($mail->send()) {
+                // Success Message
+                echo "Votre message a été envoyé avec succès!";
+            }
+    
+        } catch (Exception $e) {
+            echo "Error: Le message n'a pas pu être envoyé. Erreur de Mailer: {$mail->ErrorInfo}";
+        }
+    }
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['email'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject ="New Subscription: " . $_POST['email'];
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['email'], 'Email');
-
-  echo $contact->send();
+   
 ?>
