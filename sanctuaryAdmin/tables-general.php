@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sanctuary</title>
+  <title>SFAN</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,9 +44,9 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">Sanctuary</span>
+        <span class="d-none d-lg-block">SFAN</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -80,7 +80,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -94,13 +94,13 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html">
+            <a href="forms-elements.php">
               <i class="bi bi-circle"></i><span>Nouvelle Publication</span>
             </a>
           </li>
           <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Nouvel Evenement</span>
+            <a href="forms-layouts.php">
+              <i class="bi bi-circle"></i><span>Autres Publications</span>
             </a>
           </li>
         </ul>
@@ -112,13 +112,13 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html" class="active">
+            <a href="tables-general.php" class="active">
               <i class="bi bi-circle"></i><span>Nos Tables</span>
             </a>
           </li>
           <li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Messages</span>
+            <a href="tables-data.php">
+              <i class="bi bi-circle"></i><span>Publications</span>
             </a>
           </li>
         </ul>
@@ -135,14 +135,14 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
+        <a class="nav-link collapsed" href="pages-register.php">
           <i class="bi bi-card-list"></i>
           <span>Register</span>
         </a>
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
+        <a class="nav-link collapsed" href="pages-login.php">
           <i class="bi bi-box-arrow-in-right"></i>
           <span>Login</span>
         </a>
@@ -162,7 +162,7 @@
       <h1>Nos Tables</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
+          <li class="breadcrumb-item"><a href="index.php">Acceuil</a></li>
           <li class="breadcrumb-item">Tables</li>
           <li class="breadcrumb-item active">Nos Tables</li>
         </ol>
@@ -174,7 +174,7 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Publications</h5>
+              <h5 class="card-title">Prédications</h5>
 
 
               <!-- Table with stripped rows -->
@@ -183,25 +183,26 @@
                   <tr>
                     <th>Image</th>
                     <th><b>T</b>itre</th>
-                    <th>Description 1</th>
-                    <th>Description 2</th>
-                    <th>Corps P1</th>
-                    <th>Corps P2</th>
-                    <th>Corps P3</th>
-                    <th data-type="date" data-format="YYYY/DD/MM">
+                    <th>Description</th>
+                    <th>Catégorie</th>
+                    <th>Auteur</th>
+                    <th>Lien Externe</th>
+                    <th data-type="date" data-format="MM/DD/YYYY">
                       Date
                     </th>
-                    <th>Categorie</th>
-                    <th>Modifier</th>
+                    <th>Lien Pour Modifier</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Unity t</td>
-                    <td>9958ewf</td>
-                    <td>Curicó</td>
-                    <td>2005/02/11</td>
-                    <td>37%</td>
+                    <td>image_url</td>
+                    <td>title</td>
+                    <td>description</td>
+                    <td>category</td>
+                    <td>author</td>
+                    <td>fb_link</td>
+                    <td>publish_date</td>
+                    <td>[link using the id]</td>
                   </tr>
 
                   
@@ -332,7 +333,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>Sanctuary</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>SFAN</span></strong>. All Rights Reserved
     </div>
 
   </footer><!-- End Footer -->

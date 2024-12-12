@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Sanctuary</title>
+    <title>SFAN</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -44,7 +44,7 @@
       <div class="d-flex align-items-center justify-content-between">
         <a href="index.php" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Sanctuary</span>
+          <span class="d-none d-lg-block">SFAN</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -116,7 +116,7 @@
             </li>
             <li>
               <a href="forms-layouts.php">
-                <i class="bi bi-circle"></i><span>Nouvel evenement</span>
+                <i class="bi bi-circle"></i><span>Autres Publications</span>
               </a>
             </li>
           </ul>
@@ -145,7 +145,7 @@
             </li>
             <li>
               <a href="tables-data.php">
-                <i class="bi bi-circle"></i><span>Messages</span>
+                <i class="bi bi-circle"></i><span>Publications</span>
               </a>
             </li>
           </ul>
@@ -198,57 +198,34 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Evenements en Cours</h5>
+                <h5 class="card-title">Actualités</h5>
 
 
                 <!-- Table with stripped rows -->
                 <table class="table datatable">
                   <thead>
                     <tr>
-                      <th>Lien Image</th>
+                      <th>Lien de l'Image</th>
                       <th><b>T</b>itre</th>
-                      <th>Description</th>
-                      <th data-type="date" data-format="YYYY/DD/MM">
-                        Debut
+                      <th>Courte Description</th>
+                      <th data-type="date" data-format="DD/MM/YYYY">
+                        Date
                       </th>
-                      <th data-type="date" data-format="YYYY/DD/MM">
-                        Fin
-                      </th>
-                      <th>Lieux</th>
-                      <th>Lien Google Forms</th>
-                      <th>Instance</th>
+                      <th>Catégorie</th>
+                      <th>Situation</th>
+                      <th>Lien pour modifier</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Unity Pugh</td>
-                      <td>9958</td>
-                      <td>Curicó</td>
-                      <td>2005/02/11</td>
-                      <td>37%</td>
+                      <td>image_link</td>
+                      <td>title</td>
+                      <td>short</td>
+                      <td>publish_date</td>
+                      <td>category</td>
+                      <td>situation</td>
+                      <td>link that uses articleId</td>
                     </tr>
-                    <tr>
-                      <td>Theodore Duran</td>
-                      <td>8971</td>
-                      <td>Dhanbad</td>
-                      <td>1999/04/07</td>
-                      <td>97%</td>
-                    </tr>
-                    <tr>
-                      <td>Kylie Bishop</td>
-                      <td>3147</td>
-                      <td>Norman</td>
-                      <td>2005/09/08</td>
-                      <td>63%</td>
-                    </tr>
-                    <tr>
-                      <td>Willow Gilliam</td>
-                      <td>3497</td>
-                      <td>Amqui</td>
-                      <td>2009/29/11</td>
-                      <td>30%</td>
-                    </tr>
-                    
                   </tbody>
                 </table>
                 <!-- End Table with stripped rows -->

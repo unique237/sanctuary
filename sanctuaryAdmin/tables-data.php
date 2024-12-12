@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Sanctuary</title>
+    <title>SFAN</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -50,9 +50,9 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.php" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Sanctuary</span>
+          <span class="d-none d-lg-block">SFAN</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -95,7 +95,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
+          <a class="nav-link collapsed" href="index.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -118,13 +118,13 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="forms-elements.html">
+              <a href="forms-elements.php">
                 <i class="bi bi-circle"></i><span>Nouvelle Publication</span>
               </a>
             </li>
             <li>
-              <a href="forms-layouts.html">
-                <i class="bi bi-circle"></i><span>Nouvel Evenement</span>
+              <a href="forms-layouts.php">
+                <i class="bi bi-circle"></i><span>Autres Publications</span>
               </a>
             </li>
 
@@ -148,13 +148,13 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="tables-general.html">
+              <a href="tables-general.php">
                 <i class="bi bi-circle"></i><span>Nos Tables</span>
               </a>
             </li>
             <li>
-              <a href="tables-data.html" class="active">
-                <i class="bi bi-circle"></i><span>Messages</span>
+              <a href="tables-data.php" class="active">
+                <i class="bi bi-circle"></i><span>Publications</span>
               </a>
             </li>
           </ul>
@@ -173,7 +173,7 @@
 
 
         <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-register.html">
+          <a class="nav-link collapsed" href="pages-register.php">
             <i class="bi bi-card-list"></i>
             <span>Register</span>
           </a>
@@ -181,7 +181,7 @@
         <!-- End Register Page Nav -->
 
         <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-login.html">
+          <a class="nav-link collapsed" href="pages-login.php">
             <i class="bi bi-box-arrow-in-right"></i>
             <span>Login</span>
           </a>
@@ -198,7 +198,7 @@
         <h1>Messages</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
+            <li class="breadcrumb-item"><a href="index.php">Acceuil</a></li>
             <li class="breadcrumb-item">Tables</li>
             <li class="breadcrumb-item active">Messages</li>
           </ol>
@@ -273,7 +273,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Sanctuary</span></strong
+        &copy; Copyright <strong><span>SFAN</span></strong
         >. All Rights Reserved
       </div>
     </footer>
