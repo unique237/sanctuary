@@ -61,7 +61,7 @@ CREATE TABLE weekly (
 CREATE TABLE church (
     church_id serial PRIMARY KEY,
     church_name VARCHAR(75),
-    image_link VARCHAR(150),
+    image_ink VARCHAR(150),
     country VARCHAR(50),
     localization VARCHAR(50),
     description VARCHAR(150),

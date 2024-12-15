@@ -179,63 +179,13 @@
 
               <!-- Table with stripped rows -->
               <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th>Image</th>
-                    <th><b>T</b>itre</th>
-                    <th>Description</th>
-                    <th>Catégorie</th>
-                    <th>Auteur</th>
-                    <th>Lien Externe</th>
-                    <th data-type="date" data-format="MM/DD/YYYY">
-                      Date
-                    </th>
-                    <th>Lien Pour Modifier</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>image_url</td>
-                    <td>title</td>
-                    <td>description</td>
-                    <td>category</td>
-                    <td>author</td>
-                    <td>fb_link</td>
-                    <td>publish_date</td>
-                    <td>[link using the id]</td>
-                  </tr>
-
-                  
-
-                </tbody>
-              </table>
-              <!-- End Table with stripped rows -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Predications</h5>
-
-
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
+              <thead>
                   <tr>
                     
                     <th><b>T</b>itre</th>
-                    <th>Description 1</th>
-                    <th>Description 2</th>
+                    <th>Description </th>
+                    <th>Image</th>
                     <th>Auteur</th>
-                    <th>Rang</th>
                     <th data-type="date" data-format="YYYY/DD/MM">
                       Date
                     </th>
@@ -244,11 +194,59 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Unity Pughfgthrdfjugklhgkfydt</td>
-                    <td>9958ewfegtrhdyujgkihlohgkyutfydtsreawtesydfu</td>
-                    <td>Curicó</td>
-                    <td>2005/02/11</td>
-                    <td>37%</td>
+                    <td>title</td>
+                    <td>description</td>
+                    <td>image_url</td>
+                    <td>author</td>
+                    <td>date</td>
+                    <td><a href="">Modifier</a></td>
+                  </tr>
+
+                  
+
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Média</h5>
+
+
+              <!-- Table with stripped rows -->
+              <table class="table datatable">
+                <thead>
+                  <tr>
+                    
+                    <th><b>T</b>itre</th>
+                    <th>Catégorie </th>
+                    <th>Description</th>
+                    <th data-type="date" data-format="YYYY/DD/MM">
+                      Date
+                    </th>
+                    <th>Image</th>
+                    <th>Modifier</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    
+                    <td>title</td>
+                    <td>category</td>
+                    <td>description</td>
+                    <td>publish_date</td>
+                    <td>image_url</td>
+                    <td><a href="">Modifier</a></td>
                   </tr>
 
                   
@@ -268,7 +266,7 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Tout les Evenements</h5>
+              <h5 class="card-title">Eglises</h5>
 
 
               <!-- Table with stripped rows -->
@@ -276,47 +274,20 @@
                 <thead>
                   <tr>
                     <th>Lien Image</th>
-                    <th><b>T</b>itre</th>
+                    <th><b>N</b>om de L'Eglise</th>
                     <th>Description</th>
-                    <th data-type="date" data-format="YYYY/DD/MM">
-                      Debut
-                    </th>
-                    <th data-type="date" data-format="YYYY/DD/MM">
-                      Fin
-                    </th>
-                    <th>Lieux</th>
-                    <th>Lien Google Forms</th>
-                    <th>Instance</th>
+                    <th>Pays</th>
+                    <th>Localisation</th>
+                    <th>Modifier</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Unity Pugh</td>
-                    <td>9958</td>
-                    <td>Curicó</td>
-                    <td>2005/02/11</td>
-                    <td>37%</td>
-                  </tr>
-                  <tr>
-                    <td>Theodore Duran</td>
-                    <td>8971</td>
-                    <td>Dhanbad</td>
-                    <td>1999/04/07</td>
-                    <td>97%</td>
-                  </tr>
-                  <tr>
-                    <td>Kylie Bishop</td>
-                    <td>3147</td>
-                    <td>Norman</td>
-                    <td>2005/09/08</td>
-                    <td>63%</td>
-                  </tr>
-                  <tr>
-                    <td>Willow Gilliam</td>
-                    <td>3497</td>
-                    <td>Amqui</td>
-                    <td>2009/29/11</td>
-                    <td>30%</td>
+                    <td>image_ink</td>
+                    <td>church_name</td>
+                    <td>country</td>
+                    <td>localization</td>
+                    <td><td><a href="">modifier</a></td>%</td>
                   </tr>
                   
                 </tbody>
