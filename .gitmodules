@@ -50,3 +50,6 @@
 [submodule "vendor/symfony/deprecation-contracts"]
   path = vendor/symfony/deprecation-contracts
   url = https://github.com/symfony/deprecation-contracts.git
+[submodule "sanctuary"]
+  path = sanctuary
+  url = https://github.com/unique237/sanctuary
