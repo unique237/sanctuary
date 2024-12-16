@@ -4,7 +4,7 @@
 
 [submodule "vendor/cloudinary/transformation-builder-sdk"]
   path = vendor/cloudinary/transformation-builder-sdk
-	url = git@github.com:cloudinary/transformation-builder-sdk.git
+	url = https://github.com/cloudinary/transformation-builder-sdk.git
 
 [submodule "vendor/guzzlehttp/guzzle"]
   path = vendor/guzzlehttp/guzzle
