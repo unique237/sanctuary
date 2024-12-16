@@ -45,3 +45,8 @@
 [submodule "vendor/ralouphie/getallheaders"]
   path = vendor/ralouphie/getallheaders
   url = https://github.com/ralouphie/getallheaders.git
+
+[submodule "vendor/symfony/deprecation-contracts"]
+  path = vendor/symfony/deprecation-contracts
+  url = https://github.com/symfony/deprecation-contracts.git
+
