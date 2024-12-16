@@ -164,29 +164,6 @@
 
 
 
-        <li class="nav-heading">Pages</li>
-
-
-
-
-        <!-- End F.A.Q Page Nav -->
-
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-register.php">
-            <i class="bi bi-card-list"></i>
-            <span>Register</span>
-          </a>
-        </li>
-        <!-- End Register Page Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-login.php">
-            <i class="bi bi-box-arrow-in-right"></i>
-            <span>Login</span>
-          </a>
-        </li>
-        <!-- End Login Page Nav -->
 
 
       </ul>
@@ -211,7 +188,7 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Les Messages de la Page Contact</h5>
+                <h5 class="card-title">Publications</h5>
 
 
                 <!-- Table with stripped rows -->
