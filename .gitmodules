@@ -4,7 +4,7 @@
 
 [submodule "vendor/cloudinary/transformation-builder-sdk"]
   path = vendor/cloudinary/transformation-builder-sdk
-	url = https://github.com/cloudinary/transformation-builder-sdk.git
+  url = https://github.com/cloudinary/transformation-builder-sdk.git
 
 [submodule "vendor/guzzlehttp/guzzle"]
   path = vendor/guzzlehttp/guzzle
@@ -47,7 +47,5 @@
   url = https://github.com/ralouphie/getallheaders.git
 
 [submodule "vendor/symfony/deprecation-contracts"]
-  
   path = vendor/symfony/deprecation-contracts
   url = https://github.com/symfony/deprecation-contracts.git
-
