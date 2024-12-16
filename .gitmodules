@@ -1,6 +1,7 @@
 [submodule "vendor/cloudinary/cloudinary_php"]
   path = vendor/cloudinary/cloudinary_php
-  url = git@github.com:cloudinary/cloudinary_php.git
+  url = https://github.com/cloudinary/cloudinary_php.git
+
 
 [submodule "vendor/cloudinary/transformation-builder-sdk"]
   path = vendor/cloudinary/transformation-builder-sdk
@@ -50,6 +51,3 @@
 [submodule "vendor/symfony/deprecation-contracts"]
   path = vendor/symfony/deprecation-contracts
   url = https://github.com/symfony/deprecation-contracts.git
-[submodule "sanctuary"]
-  path = sanctuary
-  url = https://github.com/unique237/sanctuary
