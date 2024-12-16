@@ -17,3 +17,7 @@
 [submodule "vendor/guzzlehttp/psr7"]
   path = vendor/guzzlehttp/psr7
   url = https://github.com/guzzle/psr7.git
+
+[submodule "vendor/monolog/monolog"]
+  path = vendor/monolog/monolog
+  url = https://github.com/Seldaek/monolog.git
