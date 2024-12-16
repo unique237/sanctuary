@@ -23,18 +23,17 @@
   url = https://github.com/Seldaek/monolog.git
 
 [submodule "vendor/phpmailer/phpmailer"]
-   path = vendor/phpmailer/phpmailer
-   url = https://github.com/PHPMailer/PHPMailer.git
+  path = vendor/phpmailer/phpmailer
+  url = https://github.com/PHPMailer/PHPMailer.git
 
 [submodule "vendor/psr/http-client"]
-   path = vendor/psr/http-client
-   url = https://github.com/php-fig/http-client.git
+  path = vendor/psr/http-client
+  url = https://github.com/php-fig/http-client.git
 
-[submodule "vendor/psr/http-client"] 
-  path = vendor/psr/http-client 
-  url = https://github.com/php-fig/http-client.git 
-
-[submodule "vendor/psr/http-factory"] 
-  path = vendor/psr/http-factory 
+[submodule "vendor/psr/http-factory"]
+  path = vendor/psr/http-factory
   url = https://github.com/php-fig/http-factory.git
 
+[submodule "vendor/psr/http-message"]
+  path = vendor/psr/http-message
+  url = https://github.com/php-fig/http-message.git
