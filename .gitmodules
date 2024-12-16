@@ -41,3 +41,7 @@
 [submodule "vendor/psr/log"]
   path = vendor/psr/log
   url = https://github.com/php-fig/log.git
+
+[submodule "vendor/ralouphie/getallheaders"]
+  path = vendor/ralouphie/getallheaders
+  url = https://github.com/ralouphie/getallheaders.git
