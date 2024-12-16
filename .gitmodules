@@ -37,3 +37,7 @@
 [submodule "vendor/psr/http-message"]
   path = vendor/psr/http-message
   url = https://github.com/php-fig/http-message.git
+
+[submodule "vendor/psr/log"]
+  path = vendor/psr/log
+  url = https://github.com/php-fig/log.git
