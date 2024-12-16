@@ -21,3 +21,20 @@
 [submodule "vendor/monolog/monolog"]
   path = vendor/monolog/monolog
   url = https://github.com/Seldaek/monolog.git
+
+[submodule "vendor/phpmailer/phpmailer"]
+   path = vendor/phpmailer/phpmailer
+   url = https://github.com/PHPMailer/PHPMailer.git
+
+[submodule "vendor/psr/http-client"]
+   path = vendor/psr/http-client
+   url = https://github.com/php-fig/http-client.git
+
+[submodule "vendor/psr/http-client"] 
+  path = vendor/psr/http-client 
+  url = https://github.com/php-fig/http-client.git 
+
+[submodule "vendor/psr/http-factory"] 
+  path = vendor/psr/http-factory 
+  url = https://github.com/php-fig/http-factory.git
+
