@@ -1,3 +1,7 @@
+<?php
+  require('forms/display.all.php');
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -152,22 +156,7 @@
         </li>
         <!-- End Tables Nav -->
 
-        <li class="nav-heading">Pages</li>
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-register.php">
-            <i class="bi bi-card-list"></i>
-            <span>Register</span>
-          </a>
-        </li>
-        <!-- End Register Page Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-login.php">
-            <i class="bi bi-box-arrow-in-right"></i>
-            <span>Login</span>
-          </a>
-        </li>
+        
         <!-- End Login Page Nav -->
 
         <!-- End Error 404 Page Nav -->
@@ -205,27 +194,34 @@
                 <table class="table datatable">
                   <thead>
                     <tr>
-                      <th>Lien de l'Image</th>
-                      <th><b>T</b>itre</th>
+                      <th><b>N</b>itre</th>
                       <th>Courte Description</th>
-                      <th data-type="date" data-format="DD/MM/YYYY">
-                        Date
-                      </th>
-                      <th>Catégorie</th>
+                      <th>Category</th>
                       <th>Situation</th>
-                      <th>Lien pour modifier</th>
+                      <th>Modifier</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>image_link</td>
-                      <td>title</td>
-                      <td>short</td>
-                      <td>publish_date</td>
-                      <td>category</td>
-                      <td>situation</td>
-                      <td>link that uses articleId</td>
-                    </tr>
+                    <?php
+                    // Fetch data from the database
+                    $sql = "SELECT * FROM article ORDER BY articleid DESC";
+                    $result = $pdo->query($sql);
+
+                    // Check if rows are returned
+                    if ($result->rowCount() > 0) {
+                        while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                            echo "<tr>";
+                            echo "<td>" . htmlspecialchars($row['title']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['short']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['category']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['situation']) . "</td>";
+                            echo "<td><a href='update.article.php?articleid=" . $row['articleid'] . "'>Modify</a></td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='5'>No articles found.</td></tr>";
+                    }
+                    ?>
                   </tbody>
                 </table>
                 <!-- End Table with stripped rows -->

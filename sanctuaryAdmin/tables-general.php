@@ -1,3 +1,7 @@
+<?php
+  require("forms/conn.php")
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -173,18 +177,30 @@
                     <th>Modifier</th>
                   </tr>
                 </thead>
+                
+
                 <tbody>
-                  <tr>
-                    <td>title</td>
-                    <td>description</td>
-                    <td>image_url</td>
-                    <td>author</td>
-                    <td>date</td>
-                    <td><a href="">Modifier</a></td>
-                  </tr>
+                  <?php
+                  // Fetch data from the database
+                  $sql = "SELECT * FROM predication ORDER BY id DESC";
+                  $result = $pdo->query($sql);
 
-                  
-
+                  // Check if rows are returned
+                  if ($result->rowCount() > 0) {
+                      while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                          echo "<tr>";
+                          echo "<td>" . htmlspecialchars($row['title']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['description']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['image_url']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['author']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['publish_date']) . "</td>";
+                          echo "<td><a href='update.predication.php?articleid=" . $row['id'] . "'>Modifier</a></td>";
+                          echo "</tr>";
+                      }
+                  } else {
+                      echo "<tr><td colspan='5'>AUCUNE PUBLICATION.</td></tr>";
+                  }
+                  ?>
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
@@ -219,19 +235,30 @@
                     <th>Modifier</th>
                   </tr>
                 </thead>
+                
+
                 <tbody>
-                  <tr>
-                    
-                    <td>title</td>
-                    <td>category</td>
-                    <td>description</td>
-                    <td>publish_date</td>
-                    <td>image_url</td>
-                    <td><a href="">Modifier</a></td>
-                  </tr>
+                  <?php
+                  // Fetch data from the database
+                  $sql111 = "SELECT * FROM media ORDER BY id DESC";
+                  $result111 = $pdo->query($sql111);
 
-                  
-
+                  // Check if rows are returned
+                  if ($result111->rowCount() > 0) {
+                      while ($row = $result111->fetch(PDO::FETCH_ASSOC)) {
+                          echo "<tr>";
+                          echo "<td>" . htmlspecialchars($row['title']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['category']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['description']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['publish_date']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['image_url']) . "</td>";
+                          echo "<td><a href='update.media.php?id=" . $row['id'] . "'>Modifier</a></td>";
+                          echo "</tr>";
+                      }
+                  } else {
+                      echo "<tr><td colspan='5'>PAS MEDIA.</td></tr>";
+                  }
+                  ?>
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
@@ -254,7 +281,6 @@
               <table class="table datatable">
                 <thead>
                   <tr>
-                    <th>Lien Image</th>
                     <th><b>N</b>om de L'Eglise</th>
                     <th>Description</th>
                     <th>Pays</th>
@@ -262,15 +288,28 @@
                     <th>Modifier</th>
                   </tr>
                 </thead>
+
                 <tbody>
-                  <tr>
-                    <td>image_ink</td>
-                    <td>church_name</td>
-                    <td>country</td>
-                    <td>localization</td>
-                    <td><td><a href="">modifier</a></td>%</td>
-                  </tr>
-                  
+                  <?php
+                  // Fetch data from the database
+                  $sql122 = "SELECT * FROM church ORDER BY church_id DESC";
+                  $result122 = $pdo->query($sql122);
+
+                  // Check if rows are returned
+                  if ($result122->rowCount() > 0) {
+                      while ($row = $result122->fetch(PDO::FETCH_ASSOC)) {
+                          echo "<tr>";
+                          echo "<td>" . htmlspecialchars($row['church_name']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['description']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['country']) . "</td>";
+                          echo "<td>" . htmlspecialchars($row['localization']) . "</td>";
+                          echo "<td><a href='update.church.php?church_id=" . $row['church_id'] . "'>Modifier</a></td>";
+                          echo "</tr>";
+                      }
+                  } else {
+                      echo "<tr><td colspan='5'>PAS MEDIA.</td></tr>";
+                  }
+                  ?>
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->

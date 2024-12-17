@@ -1,20 +1,6 @@
 <?php
     require "conn.php"; // Database connection
-    require "../../vendor/autoload.php"; // Cloudinary PHP SDK
-    use Cloudinary\Configuration\Configuration;
-    use Cloudinary\Api\Upload\UploadApi;
     
-    // Step 1: Configure Cloudinary
-    Configuration::instance([
-        'cloud' => [
-            'cloud_name' => 'dipmwyrfq',
-            'api_key'    => '239686793613441',
-            'api_secret' => 'YUozYWuksEF8bkxwbR0sBs4sYhU',
-        ],
-        'url' => [
-            'secure' => true,
-        ],
-    ]);
 
         //display all articles 
     $sql = "SELECT * FROM article ORDER BY articleid DESC";
@@ -22,7 +8,7 @@
 
 
         //display all predication
-    $sql111 = "SELECT * FROM predication ORDER BY articleid DESC";
+    $sql111 = "SELECT * FROM predication ORDER BY id DESC";
     $result111 = $pdo->query($sql111);
 
         //display all media
@@ -38,7 +24,7 @@
     $result114 = $pdo->query($sql114);
 
         //display all testimony
-    $sql115 = "SELECT * FROM testimony ORDER BY testimony_i DESC";
+    $sql115 = "SELECT * FROM testimony ORDER BY testimony_id DESC";
     $result115 = $pdo->query($sql115);
 
 
