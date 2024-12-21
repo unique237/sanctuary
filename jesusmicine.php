@@ -75,7 +75,7 @@
 
 
       <div class="container section-title" data-aos="fade-up">
-        <h2> JESUSMICINE</h2>
+        <h2>JESUSMICINE</h2>
         <p>
           Ici nous aurons une explication détaillée de la JESUSMICINE et c’est vers cette section
           que renvoie le bouton sur la slide JESUSMICINE.
@@ -87,7 +87,7 @@
         <div class="row gy-4 justify-content-between features-item">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/jesusmicine.jpeg" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
@@ -125,7 +125,7 @@
           </div>
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/micine.jpeg" class="img-fluid" alt="">
           </div>
 
         </div>

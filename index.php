@@ -76,7 +76,7 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <img src="assets/img/hero-carousel/jesusmicine.jpeg" alt="">
           <div class="carousel-container">
             <h2>Grand Festival de la JESUSMICINE</h2>
             <p>Le grand festival international de la JESUSMICINE est la grande retraite de puissance et
@@ -86,7 +86,7 @@
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <img src="assets/img/hero-carousel/pere.jpeg" alt="">
           <div class="carousel-container">
             <h2>JESUSMICINE</h2>
             <p>La médecine parfaite de Dieu au travers de son fils JESUS CHRIST.</p>
@@ -97,7 +97,7 @@
 
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <img src="assets/img/hero-carousel/pere2.jpeg" alt="">
           <div class="carousel-container">
             <h2>Père KING G. JOSHUA</h2>
             <p>Prophète, visionnaire, Père Supérieur et Fondateur de la Méga Eglise Sanctuaire Pour Toutes les Nations
@@ -107,7 +107,7 @@
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <img src="assets/img/hero-carousel/IMG_0044.jpeg" alt="">
           <div class="carousel-container">
             <h2>Sanctuaire pour toute les nations (SFAN)</h2>
             <p>Méga Eglise, Terre Sainte, lieu de pèlerinage, Auditorium de plus de 12 000 (douze mille) places.</p>
